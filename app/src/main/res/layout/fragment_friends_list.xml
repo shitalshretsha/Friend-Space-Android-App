@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FriendsList">
+
+    <!-- TODO: Update blank fragment layout -->
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:id="@+id/friendRec"-->
+<!--        android:text="@string/friendRecord" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:orientation="horizontal"
+
+            android:background="@color/dark_blue">
+
+            <LinearLayout
+                android:layout_width="282dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/borderstyle"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/searchInput"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:textColor="@color/white"
+                    android:hint="Search"/>
+
+                <ImageView
+                    android:id="@+id/searchBtn"
+                    android:layout_width="35dp"
+                    android:layout_height="33dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/search_white" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/deleteFriend"
+                android:layout_width="45dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="7dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/delete_white" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/noItemsFound"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No items found" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/friendRec"
+            android:layout_width="match_parent"
+            android:layout_height="550dp" />
+    </LinearLayout>
+
+</FrameLayout>

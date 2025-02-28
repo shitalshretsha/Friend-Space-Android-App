@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.databasetextdisplay.MainActivity">
+    <item
+        android:id="@+id/optionHome"
+        android:icon="@drawable/home"
+        android:title="Option 1"
+        app:showAsAction="always" />
+
+    <item android:id="@+id/eventMenu"
+        android:title="Add Events"
+        android:orderInCategory="100" app:showAsAction="ifRoom" />
+    <item android:id="@+id/friendLismenu"
+        android:title="View Friends"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/addFriendMenu"
+        android:title="Add Friends"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/EventListmenu"
+        android:title="View Events"
+        android:orderInCategory="100" app:showAsAction="never" />
+</menu>
