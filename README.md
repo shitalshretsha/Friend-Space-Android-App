@@ -1,7 +1,7 @@
 **Overview**
 Friend Space is an Android application designed to help users manage their friends and events efficiently. This project was created as a learning experience to explore Android Studio, Java, RecyclerView, Fragments, SQLite, and custom adapters.
 
-🔗 GitHub Repository: [Insert your GitHub link here]
+🔗 GitHub Repository: https://github.com/shitalshretsha/Friend-Space-Android-App.git
 
 **Features**
 ✅ Add, edit, and delete friends
